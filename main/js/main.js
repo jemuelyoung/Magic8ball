@@ -15,7 +15,7 @@
 	}
 	// global array :(
 	// TODO FIX ME
-	var responses = ["No", "Maybe", "Yes", "Who Knows", "Yep", "Nope", "Probably", "Try Again", "Ehh"];
+	var responses = ["No", "Maybe", "Yes", "Who knows", "Yep", "Nope", "Probably", "Try again", "Ehh", "Time will tell"];
 	//function to call when shake occurs
 	function shakeEventDidOccur() {
 		var ans = responses[Math.floor(Math.random() * responses.length)];

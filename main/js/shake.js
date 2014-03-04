@@ -35,7 +35,7 @@
         } else if (typeof document.createEvent === "function") {
             this.event = document.createEvent('Event');
             this.event.initEvent('shake', true, true);
-        } else { 
+        } else {
           return false;
         }
     }
