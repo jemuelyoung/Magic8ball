@@ -109,6 +109,6 @@
 
     //create a new instance of shake.js.
     var myShakeEvent = new Shake();
-    myShakeEvent && myShakeEvent.start();
+    myShakeEvent.start();
 
 }(window, document));

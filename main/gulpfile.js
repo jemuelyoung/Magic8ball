@@ -1,5 +1,5 @@
 // Include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // Include Our Plugins
 var jshint = require('gulp-jshint');
@@ -10,11 +10,10 @@ var rename = require('gulp-rename');
 
 // Lint Task
 gulp.task('lint', function() {
-	 return gulp.src('js/*.js')
+     return gulp.src('js/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(jshint.reporter('fail'));
-        deferred.resolve();
 });
 
 // Compile Our Less
@@ -25,7 +24,7 @@ gulp.task('less', function() {
 });
 
 // Concatenate & Minify JS
-gulp.task('scripts', function() {
+gulp.task('scripts', ['lint'], function() {
     return gulp.src('js/*.js')
         .pipe(concat('all.min.js'))
         .pipe(uglify())
