@@ -24,7 +24,7 @@ gulp.task('less', function() {
 });
 
 // Concatenate & Minify JS
-gulp.task('scripts', ['lint'], function() {
+gulp.task('scripts', function() {
     return gulp.src('js/*.js')
         .pipe(concat('all.min.js'))
         .pipe(uglify())

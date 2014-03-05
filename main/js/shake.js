@@ -1,12 +1,12 @@
 /*
- *
- * Find more about this plugin by visiting
- * http://alxgbsn.co.uk/
- *
- * Copyright (c) 2010-2012 Alex Gibson
- * Released under MIT license
- *
- */
+*
+* Find more about this plugin by visiting
+* http://alxgbsn.co.uk/
+*
+* Copyright (c) 2010-2012 Alex Gibson
+* Released under MIT license
+*
+*/
 
 (function (window, document) {
 
@@ -109,6 +109,6 @@
 
     //create a new instance of shake.js.
     var myShakeEvent = new Shake();
-    myShakeEvent.start();
+    myShakeEvent && myShakeEvent.start();
 
 }(window, document));
